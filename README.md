@@ -1,0 +1,2 @@
+# Pure-React-Intro
+Quick easy project to implement what I learned today and to keep me motivated!
