@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hello React</title>
+  </head>
+  <body>
+    <div id="root"></div>
+
+    <!-- importing react srcipts to start pure react -->
+    <script src="https://unpkg.com/react@18/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom@18/umd/react-dom.development.js"></script>
+
+    <!-- Writing our first react code! -->
+    <script>
+      const time = new Date().toLocaleTimeString();
+      function App() {
+        return React.createElement("header", null, `${time}👋🏻`);
+      }
+
+      // creating a varible 'root' and storing by get elemenet by id root (which is div ) to a create root that comes from another react librrary function
+      const root = ReactDOM.createRoot(document.getElementById("root"));
+
+      // rendering by using root variable rendering from dom react library
+      root.render(React.createElement(App));
+    </script>
+  </body>
+</html>
